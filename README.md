@@ -28,4 +28,4 @@
 - An understanding of request and response lifecycle.
 - An understanding of Middlewares and how powerfull they are.
 
-## But the most interesting part for me was getting insights of the Database Structure and the thinking behind a Modelling Schema -> Consideration of each relationshops between data and how that decides how the database is structured. (1:Many, Many:Many etc. / embedded, normalized etc.)
+## But the most interesting part for me was getting insights of the Database Structure and the thinking behind a Modelling Schema -> Consideration of each relationship between data and how that decides how the database is structured. (1:Many, Many:Many etc. / embedded, normalized etc.)
