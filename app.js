@@ -13,6 +13,7 @@ const globalErrorHandler = require('./controllers/errorController');
 const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
+const bookingRouter = require('./routes/bookingRoutes');
 const viewRouter = require('./routes/viewRoutes');
 
 const app = express();
@@ -27,6 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Set Security HTTP Headers
 app.use(
   helmet({
+    crossOriginEmbedderPolicy: false,
+    crossOriginRessourcePolicy: false,
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'", 'data:', 'blob:', 'https:', 'ws:'],
@@ -42,7 +45,7 @@ app.use(
           'https://m.stripe.network',
           'https://*.cloudflare.com',
         ],
-        frameSrc: ["'self'", 'https://js.stripe.com'],
+        frameSrc: ["'self'", 'https://js.stripe.com', 'https:', 'data:'],
         objectSrc: ["'none'"],
         styleSrc: ["'self'", 'https:', "'unsafe-inline'"],
         workerSrc: [
@@ -131,6 +134,7 @@ app.use('/', viewRouter);
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
+app.use('/api/v1/bookings', bookingRouter);
 
 app.all('*', (req, res, next) => {
   next(new AppError(`Cant find ${req.originalUrl} in this server!`, 404));
