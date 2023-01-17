@@ -27,5 +27,6 @@
 
 - An understanding of request and response lifecycle.
 - An understanding of Middlewares and how powerfull they are.
+- Writing a documentation can be fun -> The API documentationsystem in Postman is really handy.
 
-## But the most interesting part for me was getting insights of the Database Structure and the thinking behind a Modelling Schema -> Consideration of each relationship between data and how that decides how the database is structured. (1:Many, Many:Many etc. / embedded, normalized etc.)
+### The most interesting part for me was getting insights of the Database Structure and the thinking behind a Modelling Schema -> Consideration of each relationship between data and how that decides how the database is structured. (1:Many, Many:Many etc. / embedded, normalized etc.)
