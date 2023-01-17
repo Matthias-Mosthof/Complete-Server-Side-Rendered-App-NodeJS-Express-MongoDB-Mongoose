@@ -3,7 +3,7 @@ node_modules/
 /dist
 *.env
 .cache/
-*config.env
+config.env
 
 
 # local env files
