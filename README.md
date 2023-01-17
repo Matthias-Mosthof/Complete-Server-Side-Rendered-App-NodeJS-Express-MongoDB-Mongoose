@@ -4,6 +4,7 @@
 
 - User Authentification via Webtokens
   -> Sign Up, Login, Logout, Change Password, Upload Profile Pic
+- Taking all Security aspects into account such as crypting passwords, expiring tokens and more.
 - Payment via Stripe
 - Viewing different Tours
 - Book tours
