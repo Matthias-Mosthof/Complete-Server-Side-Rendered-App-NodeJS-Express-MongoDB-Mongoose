@@ -17,7 +17,8 @@
 - Express
 - MongoDB
 - Mongoose
-  -> View Package.json for more details as I used a lot more NPM packages
+- PUG Templates
+- -> View Package.json for more details as I used a lot more NPM packages
 
 # Source
 
@@ -26,6 +27,7 @@
 # Conclusion
 
 - An understanding of request and response lifecycle.
+- An understanding of how performance Issues can occure / The importance of Asyncronus functions.
 - An understanding of Middlewares and how powerfull they are.
 - Writing a documentation can be fun -> The API documentationsystem in Postman is really handy.
 
